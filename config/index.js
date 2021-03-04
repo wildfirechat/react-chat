@@ -15,7 +15,7 @@ const config = {
     // 如果未配置https，请使用http
     // 如果需要使用非80端，一定要带上端口信息, 如:
     //STATIC_RESOURCE_PATH: 'http://static.wildfirechat.cn:8080/',
-    STATIC_RESOURCE_PATH: 'https://static.wildfirechat.cn/',
+    STATIC_RESOURCE_PATH: 'https://static.wildfirechat.net/',
 };
 
 export default config;
