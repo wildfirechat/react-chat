@@ -87,6 +87,13 @@ export default class ConversationInfo {
             return false;
         }
 
+        if ((info1.lastMessage && !info2.lastMessage) || (!info1.lastMessage && info2.lastMessage)) {
+            return false;
+        }
+
+        if (info1.lastMessage && info2.lastMessage && info1.lastMessage.messageId !== info2.lastMessage.messageId) {
+            return false;
+        }
         // 其他的应当都会反应在timestamp上
         return eq(info1.timestamp, info2.timestamp) && info1.draft === info2.draft;
 

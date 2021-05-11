@@ -2,7 +2,6 @@
  * Copyright (c) 2020 WildFireChat. All rights reserved.
  */
 
-import Config from '../../../config.js'
 
 // 运行在新的voip window
 export default class CallSession {
@@ -17,6 +16,7 @@ export default class CallSession {
     defaultAudience = false;
     audience = false;
     conference = false;
+    advance = false;
     host;
     title;
     desc;
